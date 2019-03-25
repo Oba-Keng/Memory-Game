@@ -22,12 +22,12 @@ cards[11]="images/queenofhearts.png";
 
 //shuffles through array
 function cardGame(array){
-
-var currentCard = array.length, temporaryCard, randomCard;
+ 
+var currentCard = array.length; var temporaryCard, randomCard;
 
 while(0 !== currentCard)
 {
-	randomCard = Math.floor(Math.random() * currentCard);
+	randomCard = Math.floor(Math.random() * currentCard);//math random returns floating point,math floor used to round that value off
 	currentCard -=1;
 
 	temporaryCard = array[currentCard];
@@ -41,7 +41,8 @@ while(0 !== currentCard)
     
   }
 //shuffle
-  var mix = cardGame(card);
+
+  var mix = cardGame(cards);
 //function that is applied when card is clicked
   function pick(card){
 
