@@ -1,68 +1,82 @@
+body
+{
+	font-family: Impact, Arial, Helvetica, sans-serif, 'Arial Narrow Bold', sans-serif;
+	background: #DEEEEB;
+}
 
-h1{
+header
+{
 	text-align: center;
-	color: blue;
-	padding: 30px;
-
+	color: #006b92;
+	padding: 15px;
+	font-weight: bolder;
+	font-size: 25px;
 }
 
-
-
-.container{
-
-font-size: 40px;
-max-width: auto;
-max-height: auto;
-background:yellow;
-display: grid;
-grid-template-columns: 33.3px 33.3px 33.3px;
-grid-template-rows: 150px 150px 150px;
-grid-gap
-: 190px;
-margin: auto;
-grid-template-areas:
-  "header header header"
-  "advert content content"
-  "footer footer footer";
-  justify-content: center;
-}
-.container > div {
-	background-color: green;
-	
+.container
+{
+	/* display: grid;
+	grid-template-columns: 40px 1fr; */
+	height: auto;
+	width: auto;
+	background: #42CC98;
+	margin: auto;
+	padding: 5px;
+	border-radius: 8px;
+	justify-self: center;
+	margin-left: 5%;
 }
 
-memory-card{
-padding: 100px;
-
-}
-.front-card,
-.back-card{
-	
-
-	
-
+#div1
+{
+	margin: 5px;
+	font-size:1.25em;
 }
 
+table 
+{
+	border-radius: 8px;
+	border:1px solid #42CC98;
+	padding-left: 12%;
 }
 
-}
-/* @media only screen and (max-width: 767px){
-body {
-	
-	.container{
-	align: center;
-	font-size: 40px;
-	width: 100;
-	background:lightgrey;
-	display: grid;
-	grid-template-columns: 150px 150px 150px;
-	grid-template-rows: 150px 150px 150px;
-	grid-gap: 10px;
-	grid-template-areas:
-  "header header header"
-  "advert content content"
-  "footer footer footer";
+td 
+{
+	border:2px solid #396EA3;
+	width: 100px;
+	height: 100px;
+	text-align:center;
+	border-radius: 8px;
 }
 
- }
+table img
+{
+	align-self: center;
+	height: 100px; 
+	width: 100px;
+	padding: 5px
+}
+
+img
+{
+	border-radius: 8px;
+}
+
+.inputForm
+{
+	float: left;
+	padding-top: 20%;
+	padding-right: 1%;
+	width: 250px;
+}
+
+input
+{
+	width: 50%;
+}
+
+button
+{
+	width: 50%;
+	margin: 1em;
 }
