@@ -2,56 +2,29 @@
 <html>
 <head>
 <title>Card Game One</title>
-<script src="cardGame.js"></script>
-<link rel="stylesheet" href="cardGame.css" type="text/css"> 
- 
+
+<link rel="stylesheet" href="cardGame.css" type="text/css">
+
 </head>
 <body>
 
-<h1 style="background-image: url(images/4174825-naruto-uzumaki-2-normal.jpg);">MAMECHA<br>*Memory game that matches pairs of cards*</h1>
 
+	<header class="heading">MAMECHA<br>*Memory game that matches pairs of cards*</header>
+	<div class="inputForm">
+		Enter even number from 2 to 6.
+		</br>
+		The number you enter is multiplied by itself to give you a grid.
+		</br>
+		</br>
+		<input type="text"  id="squares">
+		</br>
+		<button onclick="boxes();">start</button>
+		</br>
+	</div>
 
-<div class="container" style="background-image: url(images/4174825-naruto-uzumaki-2-normal.jpg)" "border-color: blue"> 
-	<CENTER>
-	<table border="8" bordercolor="blue">
-		<tr>
-			<td><img src="images/DSC100497013.jpg" onclick="pick(0)" height="150px" width="150px"/></td>
-			<td><img src="images/DSC100497013.jpg" onclick="pick(1)" height="150px" width="150px"/></td>
-			<td><img src="images/DSC100497013.jpg" onclick="pick(2)" height="150px" width="150px"/></td>
-			</tr>
-			<br>
-			<tr>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(3)" height="150px" width="150px"/></td>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(4)" height="150px" width="150px"/></td>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(5)" height="150px" width="150px"/></td>
-			</tr>
-			<br>
-			<tr>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(6)" height="150px" width="150px"/></td>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(7)" height="150px" width="150px"/></td>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(8)" height="150px" width="150px"/></td>
-			</tr>
-			<br>
-			<tr>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(9)" height="150px" width="150px"/></td>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(10)" height="150px" width="150px"/></td>
-				<td><img src="images/DSC100497013.jpg" onclick="pick(11)" height="150px" width="150px"/></td>
-			</tr>
-		
+	<script src="cardGame.js"></script>
 
-
-
-	</table>
-</CENTER>
-	
-    
-        
-      
-            
-            
-    
-
-
-</div>
+	<div class="inputForm" id="inptf"></div>
+	<div id="div1" ></div>
 </body>
 </html>
